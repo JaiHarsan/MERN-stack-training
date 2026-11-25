@@ -7,6 +7,27 @@
     <script src="exscript.js"></script>
 </head>
 <body>
-    
+    <h1 id="r">hii ram</h1>
+    <h3>Rohit</h3>
+    <h3>Virat</h3>
+    <h3>pandya</h3>
+    <h3>gill</h3>
+    <h3>starc</h3>
+    <button id="btn">click</button>
+    <h4 id="hi">the button color change</h4>
+    <button id="btn2">double click</button>
 </body>
+<script>
+    let t = document.getElementById("r").style.color="red"
+    let button = document.getElementById("btn");
+    button.addEventListener("click",()=>{
+        document.getElementById("hi").innerText="Button pressed"
+    })
+
+    // let button1 = document.getElementById("btn1");
+    // button1.addEventListener("dblclick",()=>{
+    //     document.getElementById("btn2").style.color="blue"
+    // })
+
+</script>
 </html>

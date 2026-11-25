@@ -25,3 +25,11 @@ catch((result)=>{                             //It executes when mypromise is re
 finally(()=>{                                 //It executes in both cases
     console.log("no order")
 })
+
+
+//let t = document.getElementById("r").style.color="red"
+// const btn = document.getElementById("btn");
+// btn.addEventListener("click",()=>{
+//     document.getElementById("hi").innerText="Button pressed"
+// })
+

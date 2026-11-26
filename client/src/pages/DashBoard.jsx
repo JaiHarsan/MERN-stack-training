@@ -21,6 +21,7 @@ function DashBoard() {
             roll = "45"
             />
         </div>
+        <button>Add Student</button>
         
     </div>
   )

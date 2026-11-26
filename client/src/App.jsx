@@ -4,7 +4,8 @@ import Sidebar from './component/Sidebar'
 import Footer from './component/Footer'
 import DashBoard from './pages/DashBoard'
 import Login from './pages/Login'
-
+import Counter from './component/Counter'
+import UserInput from './component/UserInput'
 const App = () => {
 
     return(
@@ -14,8 +15,12 @@ const App = () => {
           <Sidebar/>
           <DashBoard/>
           <Login/>
+          <Counter/>
+          <UserInput/>
         </div>
         <Footer/>
+        
+
       </div>
     )
 

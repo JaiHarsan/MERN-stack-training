@@ -5,7 +5,9 @@ import Footer from './component/Footer'
 import DashBoard from './pages/DashBoard'
 import Login from './pages/Login'
 import Counter from './component/Counter'
-import UserInput from './component/UserInput'
+// import UserInput from './component/UserInput'
+import UserInput from "./component/UserInput";
+
 const App = () => {
 
     return(

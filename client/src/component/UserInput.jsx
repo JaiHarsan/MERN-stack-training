@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
+import React from 'react'
+import { useState,useEffect } from 'react'
 
 const UserInput = () => {
     const[Name,setname] = useState("")
     useEffect(()=>{
-        console.log("Entered Name")
+        console.log("Changing",Name)
     },[Name])
     return (
         <div>
@@ -18,3 +18,5 @@ const UserInput = () => {
         </div>
     )
 }
+
+export default UserInput;

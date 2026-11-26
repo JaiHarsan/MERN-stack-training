@@ -1,8 +1,13 @@
 import React from 'react'
 
-export const StudentCard = () => {
+function StudentCard (props) {
   return (
-    <div>StudentCard</div>
+    <div>
+      <h1 className="text-lg font-bold text-center">
+        {props.name}
+      </h1>
+      <p className="mt-2 text-3x1 text-blue-600 text-center">{props.roll}</p>
+    </div>
   )
 }
 

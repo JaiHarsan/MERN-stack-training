@@ -1,11 +1,21 @@
 import React from 'react'
 import Navbar from './component/Navbar'
+import Sidebar from './component/Sidebar'
+import Footer from './component/Footer'
+import DashBoard from './pages/DashBoard'
+import Login from './pages/Login'
 
 const App = () => {
 
     return(
       <div>
         <Navbar/>
+        <div className="flex">
+          <Sidebar/>
+          <DashBoard/>
+          <Login/>
+        </div>
+        <Footer/>
       </div>
     )
 

@@ -17,6 +17,7 @@ const App = () => {
 
     return(
       <div>
+        <Navbar/>
         <div className="flex">
           <Sidebar/>
           <Routes>
@@ -27,14 +28,8 @@ const App = () => {
             <Route path="/login" element={<Login/>}/>
           </Routes>
 
-          <Navbar/>
-          <Routes>
-            <Route path="/" element={<DashBoard/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/student" element={<Student/>}/>
-            <Route path="/settings" element={<Settings/>}/>
-            <Route path="/login" element={<Login/>}/>
-          </Routes>
+          
+          
 
 
 

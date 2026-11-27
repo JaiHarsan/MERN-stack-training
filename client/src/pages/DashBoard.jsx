@@ -18,7 +18,7 @@ function DashBoard() {
 
   return (
     <div className="flex-1 bg-gray-100 p-6">
-        <h1 className="nb-5 text-2x1 font bold">
+        <h1 className="nb-5 text-2x1 font-bold text-center">
             Dashboard
         </h1>
         <p>Student Count : {students.length}</p>

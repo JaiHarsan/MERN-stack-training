@@ -7,14 +7,37 @@ import Login from './pages/Login'
 import Counter from './component/Counter'
 // import UserInput from './component/UserInput'
 import UserInput from "./component/UserInput";
+import { Routes } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import About from './component/About'
+import Student from './component/Student'
+import Settings from './component/Settings'
 
 const App = () => {
 
     return(
       <div>
-        <Navbar/>
         <div className="flex">
           <Sidebar/>
+          <Routes>
+            <Route path="/" element={<DashBoard/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/student" element={<Student/>}/>
+            <Route path="/settings" element={<Settings/>}/>
+            <Route path="/login" element={<Login/>}/>
+          </Routes>
+
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<DashBoard/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/student" element={<Student/>}/>
+            <Route path="/settings" element={<Settings/>}/>
+            <Route path="/login" element={<Login/>}/>
+          </Routes>
+
+
+
           <DashBoard/>
           <Login/>
           <Counter/>

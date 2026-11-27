@@ -17,16 +17,20 @@ const StudentForm = ({addOn}) => {
     }
     return (
         <div>
-            <form onSubmit={handleSubmit(submit)}>
+            <form onSubmit={handleSubmit(submit)} className="m-5">
+                <label>Enter the Name : </label>
                 <input {...register("name")} placeholder="Enter the Name"/>
                 <p>{errors.name?.message}</p>
 
+                <label>Enter the Email : </label>
                 <input {...register("email")} placeholder="Enter the Email"/>
                 <p>{errors.email?.message}</p>
 
+                <label>Enter the Age : </label>
                 <input {...register("age")} placeholder="Enter the Age"/>
                 <p>{errors.age?.message}</p>
 
+                <label>Select a Course : </label>
                 <select {...register("course")}>
                     <option>CSE</option>
                     <option>IT</option>

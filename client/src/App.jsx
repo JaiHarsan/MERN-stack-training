@@ -12,6 +12,8 @@ import { Route } from 'react-router-dom'
 import About from './component/About'
 import Student from './component/Student'
 import Settings from './component/Settings'
+import Crash from './component/Crash'
+// import ErrorBoundary from './component/ErrorBoundary'
 
 const App = () => {
 
@@ -20,23 +22,27 @@ const App = () => {
         <Navbar/>
         <div className="flex">
           <Sidebar/>
+          
           <Routes>
             <Route path="/" element={<DashBoard/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/student" element={<Student/>}/>
             <Route path="/settings" element={<Settings/>}/>
+            <Route path="/crash" element={<Crash/>}/>
             <Route path="/login" element={<Login/>}/>
+            
           </Routes>
+          
 
           
           
 
 
 
-          <DashBoard/>
+          {/* <DashBoard/>
           <Login/>
           <Counter/>
-          <UserInput/>
+          <UserInput/> */}
         </div>
         <Footer/>
         

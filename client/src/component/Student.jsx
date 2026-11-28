@@ -46,6 +46,8 @@ const Student = () =>{
       console.error("Error adding student : ",error)
     }
   }
+  // Edit Student
+  
 
   const updatestudent = async(id,updatedData)=>{
     try{
@@ -86,11 +88,13 @@ const Student = () =>{
       <br/>
       <br/>
       <ul>
-        {student.map((student,index)=>(
-          <li key = {index}>{student.name}-{student.email}
-          return(
-            <button onClick={()=>updatestudent(student.id)}>update</button>
-          )
+        {student.map((student)=>(
+          <li key = {student.id}>{student.id}-{student.name}-{student.email}
+          <br/>
+          <button onClick={()=>setName(student.name) & setEmail(student.email)}>Edit</button>
+          <br/>
+            <button onClick={()=>updatestudent(student.id)}>Update</button>
+          
           </li>
         ))}
       </ul>
